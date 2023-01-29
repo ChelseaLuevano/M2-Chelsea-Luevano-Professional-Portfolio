@@ -13,3 +13,8 @@
  img {
     max-width: 25%;
  }
+
+/*  This isn't working yet. Goal is to remove bullets in list under My Work"
+ ul {
+    list-style-type: none;
+ } */
