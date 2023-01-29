@@ -1,8 +1,10 @@
 
 
 :root {
-    --main-bg-color: #6CA0DC;
-    --main-font-color: white;
+    --main-bg-color: #F5FAFA;
+    --main-font-color: #6D929B;
+    --content-bg:#ACD1E9;
+    font-size: 100%;
 }
 
 * {
@@ -19,6 +21,8 @@
 
  header {
     display:flex;
+    flex-direction:column;
+    justify-content: space-between;
  }
 
 header nav {
@@ -32,10 +36,15 @@ header nav {
 header nav ul{
     list-style-type: none;
     display:flex;
-    justify-content: space-evenly;
+    justify-content:space-between;
     align-items:flex-end;
 } 
 
+header nav a {
+    font-weight: bold;
+    color: #ACD1E9;
+    text-decoration: none;
+}
 
  /*.profile {
     padding: 1em;
@@ -59,7 +68,7 @@ header nav ul{
     text-align: center;
     padding: 1em;
     font: 1em;
-    position:
+    background: var(--content-bg);
 
  }
 
