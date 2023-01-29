@@ -3,6 +3,7 @@
 :root {
     --main-bg-color: #F5FAFA;
     --main-font-color: #6D929B;
+    --sub-content-font-color: #F5FAFA;
     --content-bg-color:#ACD1E9;
     --header-bg-color: #6D929B;
     font-size: 100%;
@@ -23,11 +24,17 @@
 
  header {
     display:flex;
+    flex-direction: row;
     justify-content: space-between;
     background-color: var(--header-bg-color);
  }
 
- 
+ h1 {
+    margin: 1rem;
+    color:#F5FAFA;
+    background-color: var(--header-bg-color);
+ }
+
 header nav {
     padding-top: 15px;
     margin-right: 20px;
@@ -36,12 +43,12 @@ header nav {
     background-color: var(--header-bg-color);
 }
 
-/* No bullet points in the navigation links */
+/* No bullet points in the navigation links, nav links are to the right */
 header nav ul{
     list-style-type: none;
     display:flex;
     flex-direction: row;
-    justify-content:space-between;
+    justify-content:space-around;
     align-items:flex-end;
     background-color: var(--header-bg-color);
 } 
@@ -70,6 +77,15 @@ header nav a {
     max-width: 25%;
  }
 
+ h2 ~ p {
+    background: var(--content-bg-color);
+    color: var(--sub-content-font-color);
+ }
+
+ /*remove bullets*/
+ .work li {
+    list-style-type: none;
+ }
  /* Create box borders */
  .work {
     text-align: center;
