@@ -1,0 +1,15 @@
+
+
+
+
+/* To ensure media is never larager than its responsive container */
+ img,
+ picture,
+ video {
+   max-width: 100%;
+ }
+
+
+ img {
+    max-width: 25%;
+ }
