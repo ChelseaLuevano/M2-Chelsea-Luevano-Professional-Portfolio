@@ -1,6 +1,14 @@
 
 
+:root {
+    --main-bg-color: #6CA0DC;
+    --main-font-color: white;
+}
 
+* {
+   background-color: var(--main-bg-color);
+    color: var(--main-font-color);
+}
 
 /* To ensure media is never larager than its responsive container */
  img,
@@ -14,7 +22,7 @@
     max-width: 25%;
  }
 
-/*  This isn't working yet. Goal is to remove bullets in list under My Work"
+ /* This isn't working yet. Goal is to remove bullets in list under My Work"
  ul {
     list-style-type: none;
  } */
