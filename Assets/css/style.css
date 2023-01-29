@@ -17,12 +17,45 @@
    max-width: 100%;
  }
 
+ header {
+    display:inline-block;
+ }
+
+header nav {
+    padding-top: 15px;
+    margin-right: 20px;
+    float: right;
+    font-size: calc (1.5rem + 3vw);
+
+}
+
+/* No bullet points in the navigation links */
+header nav ul{
+    list-style-type: none;
+}
+
+/* Navigation links appear in a row */
+header nav ul li{
+    display:flex;
+    flex-direction:row;
+    justify-content: space-around;
+}
+
+
+ .profile {
+   
+ }
 
  img {
     max-width: 25%;
  }
 
- /* This isn't working yet. Goal is to remove bullets in list under My Work"
- ul {
-    list-style-type: none;
- } */
+ 
+
+
+
+
+ /* APA Sources:
+
+ 
+ */
