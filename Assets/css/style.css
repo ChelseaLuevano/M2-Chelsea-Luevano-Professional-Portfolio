@@ -3,13 +3,15 @@
 :root {
     --main-bg-color: #F5FAFA;
     --main-font-color: #6D929B;
-    --content-bg:#ACD1E9;
+    --content-bg-color:#ACD1E9;
+    --header-bg-color: #6D929B;
     font-size: 100%;
 }
 
 * {
+   flex-direction:column;
    background-color: var(--main-bg-color);
-    color: var(--main-font-color);
+   color: var(--main-font-color);
 }
 
 /* To ensure media is never larager than its responsive container */
@@ -21,29 +23,34 @@
 
  header {
     display:flex;
-    flex-direction:column;
     justify-content: space-between;
+    background-color: var(--header-bg-color);
  }
 
+ 
 header nav {
     padding-top: 15px;
     margin-right: 20px;
     float: right;
     font-size: calc (1.5rem + 3vw);
+    background-color: var(--header-bg-color);
 }
 
 /* No bullet points in the navigation links */
 header nav ul{
     list-style-type: none;
     display:flex;
+    flex-direction: row;
     justify-content:space-between;
     align-items:flex-end;
+    background-color: var(--header-bg-color);
 } 
 
 header nav a {
     font-weight: bold;
     color: #ACD1E9;
     text-decoration: none;
+    background-color: var(--header-bg-color);
 }
 
  /*.profile {
@@ -68,7 +75,7 @@ header nav a {
     text-align: center;
     padding: 1em;
     font: 1em;
-    background: var(--content-bg);
+    background: var(--content-bg-color);
 
  }
 
