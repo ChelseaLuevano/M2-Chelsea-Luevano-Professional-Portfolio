@@ -9,10 +9,13 @@
     font-size: 100%;
 }
 
+/* Overall page style properties */
 * {
+   display:flex;
    flex-direction:column;
    background-color: var(--main-bg-color);
    color: var(--main-font-color);
+   /* font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
 }
 
 /* To ensure media is never larager than its responsive container */
@@ -29,12 +32,14 @@
     background-color: var(--header-bg-color);
  }
 
+ /* My name as header 1 style properties */
  h1 {
     margin: 1rem;
     color:#F5FAFA;
     background-color: var(--header-bg-color);
  }
 
+ /* Navigation section style properties */
 header nav {
     padding-top: 15px;
     margin-right: 20px;
@@ -53,9 +58,10 @@ header nav ul{
     background-color: var(--header-bg-color);
 } 
 
+/* Navigation Links Style Properties */
 header nav a {
     font-weight: bold;
-    color: #ACD1E9;
+    color: var(--sub-content-font-color);
     text-decoration: none;
     background-color: var(--header-bg-color);
 }
@@ -86,17 +92,25 @@ header nav a {
  .work li {
     list-style-type: none;
  }
+
  /* Create box borders */
  .work {
     text-align: center;
     padding: 1em;
     font: 1em;
+    /* background: var(--content-bg-color); */
+    flex: wrap;
+ }
+ 
+ .work ~ p {
     background: var(--content-bg-color);
-
  }
 
 
-
+footer {
+    display:flex;
+    font-style: italic;
+}
 
  /* APA Sources:
 
