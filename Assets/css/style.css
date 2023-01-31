@@ -88,6 +88,10 @@ header nav a {
     color: var(--sub-content-font-color);
  }
 
+ p {
+    padding: 0.5em;
+ }
+
  /*remove bullets*/
  .work li {
     list-style-type: none;
@@ -107,6 +111,11 @@ header nav a {
     background: var(--content-bg-color);
  }
 
+.sub-work {
+    flex: display;
+    border: var(--header-bg-color) solid;
+    justify-content: space-between;
+}
 
 footer {
     display:flex;
