@@ -11,8 +11,8 @@
 
 /* Overall page style properties */
 * {
-   display:flex;
-   flex-direction:column;
+   /* display:flex;
+   flex-direction:column; */
    background-color: var(--main-bg-color);
    color: var(--main-font-color);
    /* font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
