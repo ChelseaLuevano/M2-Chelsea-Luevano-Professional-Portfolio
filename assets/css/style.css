@@ -1,11 +1,10 @@
 
 /* Color reference: https://www.colorcombos.com/color-schemes/124/ColorCombo124.html */
 :root {
-    --main-bg-color: #F5FAFA;
-    --main-font-color: #6D929B;
-    --sub-content-font-color: #F5FAFA;
-    --content-bg-color:#ACD1E9;
-    --header-bg-color: #6D929B;
+  
+    --main-color:#6D929B;
+    --accent-color:#F5FAFA;
+    --accent-color2:#ACD1E9;
     font-size: 100%;
 }
 
@@ -14,7 +13,7 @@
    /* display:flex;
    flex-direction:column; */
    background-color: var(--main-bg-color);
-   color: var(--main-font-color);
+   color: var(--main-color);
    /* font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
 }
 
@@ -29,14 +28,14 @@
     display:flex;
     flex-direction: row;
     justify-content: space-between;
-    background-color: var(--header-bg-color);
+    background-color: var(--main-color);
  }
 
  /* My name as header 1 style properties */
  h1 {
     margin: 1rem;
     color:#F5FAFA;
-    background-color: var(--header-bg-color);
+    background-color: var(--main-color);
  }
 
  /* Navigation section style properties */
@@ -45,7 +44,7 @@ header nav {
     margin-right: 20px;
     float: right;
     font-size: calc (1.5rem + 3vw);
-    background-color: var(--header-bg-color);
+    background-color: var(--main-color);
 }
 
 /* No bullet points in the navigation links, nav links are to the right */
@@ -55,15 +54,15 @@ header nav ul{
     flex-direction: row;
     justify-content:space-around;
     align-items:flex-end;
-    background-color: var(--header-bg-color);
+    background-color: var(--main-color);
 } 
 
 /* Navigation Links Style Properties */
 header nav a {
     font-weight: bold;
-    color: var(--sub-content-font-color);
+    color: var(--accent-color);
     text-decoration: none;
-    background-color: var(--header-bg-color);
+    background-color: var(--main-color);
 }
 
  /*.profile {
@@ -84,8 +83,8 @@ header nav a {
  }
 
  h2 ~ p {
-    background: var(--content-bg-color);
-    color: var(--sub-content-font-color);
+    background: var(--accent-color2);
+    color: var(--accent-color);
  }
 
  p {
@@ -103,17 +102,17 @@ header nav a {
     padding: 1em;
     font: 1em;
     display:flex;
-    /* background: var(--content-bg-color); */
+    /* background: var(--accent-color2); */
     flex: wrap;
  }
  
  .work ~ p {
-    background: var(--content-bg-color);
+    background: var(--accent-color2);
  }
 
 .sub-work {
     flex: display;
-    border: var(--header-bg-color) solid;
+    border: var(--main-color) solid;
     justify-content: space-between;
 }
 
