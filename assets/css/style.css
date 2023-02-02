@@ -36,6 +36,7 @@
     margin: 1rem;
     color:#F5FAFA;
     background-color: var(--main-color);
+    /* padding: .5em; */
  }
 
  /* Navigation section style properties */
@@ -52,17 +53,18 @@ header nav ul{
     list-style-type: none;
     display:flex;
     flex-direction: row;
-    justify-content:space-around;
-    align-items:flex-end;
     background-color: var(--main-color);
 } 
 
 /* Navigation Links Style Properties */
 header nav a {
+    display:flex;
     font-weight: bold;
+    justify-content: center;
     color: var(--accent-color);
     text-decoration: none;
     background-color: var(--main-color);
+    padding:.5em;
 }
 
  /*.profile {
