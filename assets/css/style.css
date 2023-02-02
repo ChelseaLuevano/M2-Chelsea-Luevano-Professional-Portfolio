@@ -95,18 +95,20 @@ header nav a {
     padding: 0.5em;
  }
 
- /*remove bullets*/
- .work li {
-    list-style-type: none;
- }
-
  /* Create box borders */
  .work {
-    text-align: center;
-    padding: 1em;
-    font: 1em;
-    display:flex;
-    flex: wrap;
+   position: relative;
+   text-align: center;
+   padding: 1em;
+   font: 1em;
+   display:flex;
+   flex: wrap;
+ }
+
+ /* image styling */
+ .work img {
+
+
  }
  
  .work ~ p {
@@ -114,16 +116,21 @@ header nav a {
  }
 
 .sub-work {
-    flex: display;
+    /* flex: display; */
     border: var(--main-color) solid;
-    justify-content: space-between;
+    position: relative;
+    text-align: center;
+    /* justify-content: space-between; */
 }
 
-.work header {
-   padding: 10px;
-   background: var(--accent-color2);
-   color: #fff;
 
+.work header {
+   position: absolute;
+   bottom: 2%;
+   left: 5%;
+   padding: 5%;
+   background: var(--accent-color2);
+   color: var(--accent-color);
  }
  
 
@@ -152,4 +159,6 @@ footer {
  /* APA Sources:
 
  https://projects.verou.me/css3patterns/#cicada-stripes
+
+ How to put an icon in the head of HTML File - https://www.w3schools.com/html/html_favicon.asp
  */
