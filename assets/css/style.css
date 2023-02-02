@@ -34,8 +34,9 @@
  /* My name as header 1 style properties */
  h1 {
     margin: 1rem;
-    color:#F5FAFA;
-    background-color: var(--main-color);
+    color:var(--main-color);
+    background-color: var(--accent-color);
+    padding: .5em;
     /* padding: .5em; */
  }
 
@@ -54,6 +55,7 @@ header nav ul{
     display:flex;
     flex-direction: row;
     background-color: var(--main-color);
+    text-decoration: underline;
 } 
 
 /* Navigation Links Style Properties */
@@ -104,7 +106,6 @@ header nav a {
     padding: 1em;
     font: 1em;
     display:flex;
-    /* background: var(--accent-color2); */
     flex: wrap;
  }
  
@@ -117,6 +118,28 @@ header nav a {
     border: var(--main-color) solid;
     justify-content: space-between;
 }
+
+.work header {
+   padding: 10px;
+   background: var(--accent-color2);
+   color: #fff;
+
+ }
+ 
+
+.contact-info {
+   flex: display;
+   border: var(--main-color) solid;
+   justify-content: space-between;
+}
+
+/* section {
+   float:right;
+}
+
+aside {
+   float:left;
+} */
 
 footer {
     display:flex;
