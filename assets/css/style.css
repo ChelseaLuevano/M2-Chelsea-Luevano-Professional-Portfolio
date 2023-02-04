@@ -5,7 +5,6 @@
     --main-color:#6D929B;
     --accent-color:#F5FAFA;
     --accent-color2:#ACD1E9;
-    --standard-image-size: 100%;
     font-size: 100%;
     
 }
@@ -72,7 +71,7 @@ header nav a {
 .hero {
    background-image: url("../images/spring-background.jpeg");
    height: 120px;
-   /* min-height: 120px;; */
+   /* min-height: 120px; */
    background-size: cover;
    position: relative; 
 }
@@ -92,6 +91,7 @@ header nav a {
 /* Profile photo max size */
  .profile img {
     max-width: 15%;
+    border: var(--accent-color) solid;
  }
 
  /* Creates page layout to be in two columns */
@@ -104,30 +104,36 @@ header nav a {
  .left-column {
    padding: 2%;
    display: flex;
+   flex: 1;
    float:left;
    width: 25%;
    font-size: 200%;
    justify-content: flex-end;
+   position: relative;
  }
 
  /* Aligns content to right side of page */
  .right-column {
    display: flex;
-   flex-direction:row;
-   flex: 0 0 33%;
+   flex-direction: row;
+   flex-wrap: wrap;
+   flex: 3;
    float:right;
    width: 75%;
    align-items: stretch;
    justify-content: space-between;
-   border: var(--main-color) solid;
    position: relative;
    text-align: center;
  }  
 
  .sub-work {
    border: var(--main-color) solid;
+   margin: 1%;
    position: relative;
-   text-align: center;
+   height: 300px;
+   min-width: 200px;
+   flex-grow: 1;
+   flex-wrap: wrap;
  }
 
  p {
@@ -137,7 +143,6 @@ header nav a {
  .right-column header {
    font-weight: bold;
  }
-
 
  .work header {
    position: absolute;
@@ -149,20 +154,23 @@ header nav a {
 
 
  /* image styling */
- .work img {
-   flex:1;
-   /* object-fit: contain; */
-   /* max-height: var(--standard-image-size); */
+ .sub-work img {
+   max-width: 100%;
+   max-height: 100%;
+   object-fit: cover;
+   object-position: top;
  }
 
  /* Images with links will change colors when you hover over them */
  /* .work img:hover {
+   cursor: pointer;
    background:aqua;
+   opacity:0.5;
  } */
  
 /* Styling to meet acceptance criteria: WHEN I am presented with the developers first application THEN that application image image should be larger in size than the others */
 #largest-photo {
-   flex:4;
+   min-height: 200%;
 }
 
 
