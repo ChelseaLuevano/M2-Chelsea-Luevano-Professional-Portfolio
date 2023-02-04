@@ -84,6 +84,12 @@ header nav a {
     background-size: 13px, 29px, 37px, 53px;
  } */
 
+.hero {
+   background-image: url("./assets/images/laptop.jpeg");
+   background-size: cover;
+   background-position:center;
+}
+
  .profile img {
     max-width: 25%;
  }
@@ -116,11 +122,15 @@ header nav a {
  }
 
 .sub-work {
-    /* flex: display; */
+   
+    flex: display;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: stretch;
+    justify-content: space-between;
     border: var(--main-color) solid;
     position: relative;
     text-align: center;
-    /* justify-content: space-between; */
 }
 
 
@@ -161,4 +171,6 @@ footer {
  https://projects.verou.me/css3patterns/#cicada-stripes
 
  How to put an icon in the head of HTML File - https://www.w3schools.com/html/html_favicon.asp
+
+ How to add a hero image https://www.w3schools.com/howto/howto_css_hero_image.asp
  */
