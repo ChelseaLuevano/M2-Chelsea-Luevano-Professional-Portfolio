@@ -5,7 +5,9 @@
     --main-color:#6D929B;
     --accent-color:#F5FAFA;
     --accent-color2:#ACD1E9;
+    --standard-image-size: 100%;
     font-size: 100%;
+    
 }
 
 /* Overall page style properties */
@@ -82,7 +84,7 @@ header nav a {
     background-size: 13px, 29px, 37px, 53px;
  } */
 
- img {
+ .profile img {
     max-width: 25%;
  }
 
@@ -100,15 +102,13 @@ header nav a {
    position: relative;
    text-align: center;
    padding: 1em;
-   font: 1em;
    display:flex;
    flex: wrap;
  }
 
  /* image styling */
  .work img {
-
-
+   max-width: var(--standard-image-size);
  }
  
  .work ~ p {
