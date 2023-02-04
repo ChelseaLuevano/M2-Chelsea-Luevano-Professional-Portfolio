@@ -113,28 +113,31 @@ header nav a {
  /* Aligns content to right side of page */
  .right-column {
    display: flex;
+   flex-direction:row;
+   flex: 0 0 33%;
    float:right;
    width: 75%;
+   align-items: stretch;
+   justify-content: space-between;
+   border: var(--main-color) solid;
+   position: relative;
+   text-align: center;
  }  
 
-
- h2 ~ p {
-    background: var(--accent-color2);
-    color: var(--accent-color);
+ .sub-work {
+   border: var(--main-color) solid;
+   position: relative;
+   text-align: center;
  }
 
  p {
     padding: 0.5em;
  }
 
- /* Create box borders */
- .work {
-   display:flex;
-   flex-flow: row wrap;
-   position: relative;
-   text-align: center;
-   padding: 1em;
+ .right-column header {
+   font-weight: bold;
  }
+
 
  .work header {
    position: absolute;
@@ -142,22 +145,14 @@ header nav a {
    padding: 5%;
    background: var(--accent-color2);
    color: var(--accent-color);
-   font-weight: bold;
  }
 
-
- header ~ p {
-   position: absolute;
-   /* top: 55%;
-   padding: 5%; */
-   background: var(--accent-color2);
-   color: var(--accent-color);
- }
 
  /* image styling */
  .work img {
+   flex:1;
    /* object-fit: contain; */
-   max-height: var(--standard-image-size);
+   /* max-height: var(--standard-image-size); */
  }
 
  /* Images with links will change colors when you hover over them */
@@ -165,38 +160,10 @@ header nav a {
    background:aqua;
  } */
  
-
- .work ~ p {
-    background: var(--accent-color2);
- }
-
-.sub-work {
-    display: flex;
-    flex-flow: row wrap;
-    flex: 0 0 33%;
-    align-items: stretch;
-    justify-content: space-between;
-    border: var(--main-color) solid;
-    position: relative;
-    text-align: center;
-    /* float: right;
-    width: 75%;*/
-} 
-
-
 /* Styling to meet acceptance criteria: WHEN I am presented with the developers first application THEN that application image image should be larger in size than the others */
 #largest-photo {
    flex:4;
 }
-
-.contact-info {
-   display:flex;
-   flex-flow: row wrap;
-   justify-content: space-between;
-   /* float: right;
-   width: 75%; */
-}
-
 
 
  /* There is no footer in Mock-Up so I have commented out this code */
