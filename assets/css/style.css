@@ -135,10 +135,11 @@ header nav a {
 
  /* Create box borders */
  .work {
+   display:flex;
+   flex-direction: row;
    position: relative;
    text-align: center;
    padding: 1em;
-   display:flex;
    flex: wrap;
  }
 
@@ -153,8 +154,8 @@ header nav a {
 
 .sub-work {
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+    flex-flow: row wrap;
+    flex:1;
     align-items: stretch;
     justify-content: space-between;
     border: var(--main-color) solid;
@@ -164,6 +165,11 @@ header nav a {
     width: 75%;*/
 } 
 
+/* Styling to meet acceptance criteria: WHEN I am presented with the developers first application THEN that application image image should be larger in size than the others */
+#largest-photo {
+   flex:4;
+}
+
 .work header {
    position: absolute;
    bottom: 2%;
@@ -172,12 +178,10 @@ header nav a {
    background: var(--accent-color2);
    color: var(--accent-color);
  }
- 
 
 .contact-info {
    display:flex;
    flex-direction: row;
-   border: var(--main-color) solid;
    justify-content: space-between;
    /* float: right;
    width: 75%; */
