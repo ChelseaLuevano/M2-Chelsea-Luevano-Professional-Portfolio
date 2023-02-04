@@ -11,7 +11,7 @@
 
 /* Overall page style properties */
 * {
-   background-color: var(--main-bg-color);
+   background-color: var(--accent-color);
    color: var(--main-color);
    /* font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
 }
@@ -110,6 +110,7 @@ header nav a {
    font-size: 200%;
    justify-content: flex-end;
    position: relative;
+   border-right: 4px solid var(--main-color);
  }
 
  /* Aligns content to right side of page */
@@ -117,24 +118,33 @@ header nav a {
    display: flex;
    flex-direction: row;
    flex-wrap: wrap;
-   flex: 3;
+   /* flex: 3; */
    float:right;
    width: 75%;
    align-items: stretch;
-   justify-content: space-between;
-   position: relative;
+   justify-content: center;
    text-align: center;
  }  
 
+ /* Styling of Middle Section with Work Content */
  .sub-work {
-   border: var(--main-color) solid;
+   border: 5 px solid var(--main-color);
+   background-blend-mode: soft-light;
    margin: 1%;
    position: relative;
-   height: 300px;
-   min-width: 200px;
-   flex-grow: 1;
-   flex-wrap: wrap;
+   min-height: 150px;
+   max-height: 150px;
+   flex-basis: calc(50% - 1em);
+   display:flex;
+   align-items: flex-end;
+   font-size: calc (1rem + 3vw);
  }
+
+ /* Styling to meet acceptance criteria: WHEN I am presented with the developers first application THEN that application image image should be larger in size than the others */
+ .sub-work:first-child {
+   min-height: 400px;
+   flex-basis: 100%;
+ }  
 
  p {
     padding: 0.5em;
@@ -152,6 +162,9 @@ header nav a {
    color: var(--accent-color);
  }
 
+/* aside {
+   border-right: 1px var(--main-bg-color) solid;
+} */
 
  /* image styling */
  .sub-work img {
@@ -161,6 +174,28 @@ header nav a {
    object-position: top;
  }
 
+ /* Images to appear in Work Section */
+ .prework-study-guide {
+   background-image: url("../assets/images/PreworkStudyGuide.png");
+ }
+
+ .m1-accessible-code {
+   background-image: url("../assets/images/M1-Challenge-Horiseon-Website.png");
+ }
+
+ .m1-archie {
+   background-image: url("../assets/images/150x150.png");
+ }
+
+ .m2-placeholder {
+   background-image: url("../assets/images/150x150.png");
+ }
+
+ .m3-placeholder {
+   background-image: url("../assets/images/150x150.png");
+ }
+
+
  /* Images with links will change colors when you hover over them */
  /* .work img:hover {
    cursor: pointer;
@@ -169,9 +204,9 @@ header nav a {
  } */
  
 /* Styling to meet acceptance criteria: WHEN I am presented with the developers first application THEN that application image image should be larger in size than the others */
-#largest-photo {
+/* .prework-study-guide {
    min-height: 200%;
-}
+} */
 
 
  /* There is no footer in Mock-Up so I have commented out this code */
