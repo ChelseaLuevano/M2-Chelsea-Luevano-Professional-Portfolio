@@ -94,21 +94,29 @@ header nav a {
     max-width: 15%;
  }
 
- /* .left-column {
+ /* Creates page layout to be in two columns */
+ main {
+   display: flex;
+   flex-direction: column;
+ }
+
+ /* Aligns headers to the left side of page */
+ .left-column {
+   padding: 2%;
    display: flex;
    float:left;
    width: 25%;
+   font-size: 200%;
+   justify-content: flex-end;
  }
 
- .right-column{
+ /* Aligns content to right side of page */
+ .right-column {
    display: flex;
    float:right;
    width: 75%;
- } */
+ }  
 
- /* h2 {
-   float:left;
- } */
 
  h2 ~ p {
     background: var(--accent-color2);
@@ -130,7 +138,7 @@ header nav a {
 
  .work header {
    position: absolute;
-   top: 50%;
+   bottom: 5%;
    padding: 5%;
    background: var(--accent-color2);
    color: var(--accent-color);
@@ -190,13 +198,6 @@ header nav a {
 }
 
 
-aside {
-   text-align:center;
- }
-
- aside h2 {
-   font-size: 200%;
- }
 
  /* There is no footer in Mock-Up so I have commented out this code */
 /* footer {
