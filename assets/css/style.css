@@ -97,79 +97,64 @@ header nav a {
  main {
    display: flex;
    flex-direction: column;
+   /* justify-content: space-between; */
  }
+
+ .page-section {
+   display:flex;
+   flex-direction: row;
+   flex-wrap: wrap;
+   align-items: stretch;
+   align-content: space-between;
+   margin-bottom: 5px;
+   /* gap: 1px; */
+}
 
  /* Aligns headers to the left side of page */
  .left-column {
    padding: 2%;
-   display: flex;
-   flex-direction: column;
+   /* display: flex;
+   flex-direction: column; */
    flex: 1, 1, auto;
-   float:left;
    width: 25%;
    font-size: 200%;
    justify-content: flex-end;
    align-items: stretch;
    position: relative;
+   border-right: 4px solid var(--main-color);
  }
 
- aside {
+ /* aside {
    border-right: 4px solid var(--main-color);
-   position: absolute;
-   width: 100%;
-   height: 100%;
-   color: var(--main-color)
+ } */
+
+/* Styling of h2 text in the left-aside of page */
+ aside > h2 {
+   color: var(--main-color);
  }
 
  /* Aligns content to right side of page */
  .right-column {
+   width: 75%;
+ }  
+
+ /* Style paragraph content in about-me section */
+ .about-me p {
+   color: var(--main-color);
+   padding: 0.5em;
+ }
+
+ /* style work content to wrap */
+.work {
    display: flex;
    flex-direction: row;
    flex-wrap: wrap;
-   float:right;
-   width: 75%;
-   align-items: stretch;
-   justify-content: center;
-   text-align: center;
- }  
+   /* border-left: 4px solid var(--main-color); */
 
- /* Styling of Middle Section with Work Content */
- .sub-work {
-   border: 5px solid var(--main-color);
-   /* background-blend-mode: soft-light; */
-   background-size: 125%;
-   margin: 1%;
-   position: relative;
-   min-height: 150px;
-   max-height: 150px;
-   flex-basis: calc(50% - 1em);
-   display:flex;
-   align-items: flex-end;
-   font-size: calc (1rem + 3vw);
- }
-
- /* Styling to meet acceptance criteria: WHEN I am presented with the developers first application THEN that application image image should be larger in size than the others */
- .sub-work:first-child {
-   min-height: 400px;
-   flex-basis: 100%;
- }  
-
-
- p {
-    padding: 0.5em;
- }
-
- /* Header Styling on top of Work Images */
- .sub-work div {
-   position: absolute;
-   bottom: 5%;
-   padding: 5%;
-   background: var(--main-color);
-   color: var(--accent-color);
- }
+}
 
  /* Images to appear in Work Section */
-.prework-study-guide {
+ .prework-study-guide {
    background-image: url("../images/PreworkStudyGuide.png");
  }
 
@@ -190,15 +175,51 @@ header nav a {
  }
 
 
+ /* Styling of Middle Section with Work Content */
+ .sub-work {
+   border: 5px solid var(--main-color);
+   /* background-blend-mode: soft-light; */
+   background-size: 125%;
+   margin: 1%;
+   position: relative;
+   min-height: 150px;
+   max-height: 150px;
+   flex-basis: calc(50% - 1em);
+   display:flex;
+   font-size: calc (1rem + 3vw);
+ }
+
+ /* Styling to meet acceptance criteria: WHEN I am presented with the developers first application THEN that application image image should be larger in size than the others */
+ .sub-work:first-child {
+   min-height: 400px;
+   flex-basis: 100%;
+ }  
+
+ /* Header Styling on top of Work Images */
+ .sub-work div {
+   position: absolute;
+   bottom: 5%;
+   padding: 5%;
+   background: var(--main-color);
+   color: var(--accent-color);
+ }
+
  /* Images with links will change colors when you hover over them */
  .sub-work:hover img {
    background-color: var(--main-color);
    opacity: 0.3;
  }
  
-.contact-info {
+ 
+ /* Styling of the contact details */
+.contact-details {
    padding: 4%;
    margin: .5%;
+   display: flex;
+   flex-direction: row;
+   flex-wrap: wrap;
+   align-items: stretch;
+   justify-content: center;
 }
 
  /* There is no footer in Mock-Up so I have commented out this code */
