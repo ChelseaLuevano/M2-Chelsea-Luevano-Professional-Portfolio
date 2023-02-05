@@ -113,7 +113,8 @@ header nav a {
  .left-column {
    padding: 2%;
    width: 25%;
-   font-size: 200%;
+   /* font-size: 200%; */
+   font-size: calc(2rem + 1vw);
    position: relative;
    border-right: 4px solid var(--main-color);
  }
@@ -221,10 +222,9 @@ header nav a {
 @media screen and (min-width: 320px) and (max-width: 480px) { 
    .page-section{
       text-align: center;
-      border-right: bottom;
       }
    .left-column{
-      font-size: .5vw;
+      text-align:center;
  }
 }
 
@@ -232,10 +232,10 @@ header nav a {
 @media screen and (min-width: 480px) and (max-width: 780px) { 
    .page-section{
       text-align: center;
-      border-right: bottom;
+      /* border-right: bottom; */
       }
    .left-column{
-      font-size: 1vw;
+      text-align: center;
  }
  }
 
@@ -243,10 +243,10 @@ header nav a {
 @media screen and (min-width:780px) and (max-width: 1020px) { 
    .page-section{
       text-align: center;
-      border-right: bottom;
+      /* border-right: bottom; */
       }
    .left-column{
-      font-size: 1vw;
+      /* font-size: 1em; */
  }
  }
 
