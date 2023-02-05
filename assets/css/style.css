@@ -113,7 +113,6 @@ header nav a {
  .left-column {
    padding: 2%;
    width: 25%;
-   /* font-size: 200%; */
    font-size: calc(2rem + 1vw);
    position: relative;
    border-right: 4px solid var(--main-color);
@@ -176,7 +175,7 @@ header nav a {
    min-height: 150px;
    max-height: 150px;
    flex-basis: calc(50% - 1em);
-   display:flex;
+   display: flex;
    font-size: calc (1rem + 3vw);
  }
 
@@ -224,7 +223,7 @@ header nav a {
       text-align: center;
       }
    .left-column{
-      text-align:center;
+      font-size: calc(1rem + 1vw);
  }
 }
 
@@ -232,22 +231,14 @@ header nav a {
 @media screen and (min-width: 480px) and (max-width: 780px) { 
    .page-section{
       text-align: center;
-      /* border-right: bottom; */
       }
-   .left-column{
-      text-align: center;
- }
- }
+}
 
  /* Large Desktop Styling */
 @media screen and (min-width:780px) and (max-width: 1020px) { 
    .page-section{
       text-align: center;
-      /* border-right: bottom; */
       }
-   .left-column{
-      /* font-size: 1em; */
- }
  }
 
  /* There is no footer in Mock-Up so I have commented out this code */
