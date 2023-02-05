@@ -104,13 +104,21 @@ header nav a {
  .left-column {
    padding: 2%;
    display: flex;
-   flex: 1;
+   flex-direction: column;
+   flex: 1, 1, auto;
    float:left;
    width: 25%;
    font-size: 200%;
    justify-content: flex-end;
+   align-items: stretch;
    position: relative;
+ }
+
+ aside {
    border-right: 4px solid var(--main-color);
+   position: absolute;
+   width: 100%;
+   height: 100%;
  }
 
  /* Aligns content to right side of page */
@@ -147,15 +155,13 @@ header nav a {
    flex-basis: 100%;
  }  
 
+
  p {
     padding: 0.5em;
  }
 
- .right-column header {
-   font-weight: bold;
- }
-
- .work header {
+ /* Header Styling on top of Work Images */
+ .sub-work div {
    position: absolute;
    bottom: 5%;
    padding: 5%;
@@ -186,10 +192,10 @@ header nav a {
 
 
  /* Images with links will change colors when you hover over them */
- /* .work img:hover {
-   cursor: pointer;
-   opacity:0.5;
- } */
+ .sub-work:hover img {
+   background-color: var(--main-color);
+   opacity: 0.3;
+ }
  
 .contact-info {
    padding: 4%;
