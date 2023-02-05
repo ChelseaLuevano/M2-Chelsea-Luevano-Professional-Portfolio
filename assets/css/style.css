@@ -188,9 +188,14 @@ header nav a {
  .sub-work div {
    position: absolute;
    bottom: 5%;
-   padding: 5%;
+   padding: 2%;
    background: var(--main-color);
    color: var(--accent-color);
+   text-align: left;
+ }
+
+ .sub-work h3 {
+   font-size: 120%;
  }
 
  /* Images with links will change colors when you hover over them */
@@ -198,7 +203,7 @@ header nav a {
    background-color: var(--main-color);
    opacity: 0.3;
  }
- 
+
  
  /* Styling of the contact details */
 .contact-details {
