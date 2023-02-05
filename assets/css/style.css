@@ -154,7 +154,7 @@ header nav a {
  }
 
  .m1-archie {
-   background-image: url("../images/150x150.png");
+   background-image: url("../images/150x150.jpg");
  }
 
  .m2-placeholder {
@@ -169,9 +169,8 @@ header nav a {
  /* Styling of Middle Section with Work Content */
  .sub-work {
    border: 5px solid var(--main-color);
-   /* background-blend-mode: soft-light; */
+   background-blend-mode: soft-light;
    background-size: 125%;
-
    position: relative;
    min-height: 150px;
    max-height: 150px;
@@ -200,18 +199,35 @@ header nav a {
    font-size: 120%;
  }
 
+/* Images with links will change colors when you hover over them -- wasn't able to get this to work so went with option B below for hover*/
+/* .sub-work:hover {
+   background-image: pink;
+ } */
+
  /* Images with links will change colors when you hover over them */
  .sub-work:hover {
    opacity: 0.1;
  }
 
- 
  /* Styling of the contact details */
 .contact-details {
    padding: 4%;
    margin: .5%;
    text-align: center;
 }
+
+
+/* mobile styling */
+@media screen and (max-width: 480px) { 
+   .page-section{
+      text-align: center;
+      border-right: bottom;
+      }
+   .left-column{
+      font-size: .5vw;
+ }
+}
+
 
  /* There is no footer in Mock-Up so I have commented out this code */
 /* footer {
