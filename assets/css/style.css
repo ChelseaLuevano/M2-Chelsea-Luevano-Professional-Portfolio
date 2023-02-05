@@ -106,7 +106,7 @@ header nav a {
    flex-wrap: wrap;
    align-items: stretch;
    align-content: space-between;
-   margin-bottom: 10px;
+   margin-bottom: 15px;
 }
 
  /* Aligns headers to the left side of page */
@@ -126,7 +126,9 @@ header nav a {
 
  /* Aligns content to right side of page */
  .right-column {
-   width: 75%;
+   width: 68%;
+   margin-left: 2%;
+   margin-right: 4%;
  }  
 
  /* Style paragraph content in about-me section */
@@ -169,7 +171,7 @@ header nav a {
    border: 5px solid var(--main-color);
    /* background-blend-mode: soft-light; */
    background-size: 125%;
-   margin: 1%;
+
    position: relative;
    min-height: 150px;
    max-height: 150px;
