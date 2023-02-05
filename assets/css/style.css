@@ -199,9 +199,8 @@ header nav a {
  }
 
  /* Images with links will change colors when you hover over them */
- .sub-work:hover img {
-   background-color: var(--main-color);
-   opacity: 0.3;
+ .sub-work:hover {
+   opacity: 0.1;
  }
 
  
