@@ -266,6 +266,9 @@ header nav a {
    .page-section{
       text-align: center;
    }
+   .profile img {
+      max-width: 10%;
+   } 
    .left-column{
       font-size: calc(2rem + 1vw);
       border-right: 4px solid var(--main-color);
@@ -275,7 +278,8 @@ header nav a {
       flex-basis: calc(50% - 1em);
       display: flex;
       font-size: calc (3rem + 3vw);
-    }
+    } 
+}
  /* There is no footer in Mock-Up so I have commented out this code */
 /* footer {
     display:flex;
