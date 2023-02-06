@@ -216,12 +216,19 @@ header nav a {
    text-align: center;
 }
 
-
 /* Mobile Styling */
 @media screen and (min-width: 320px) and (max-width: 480px) { 
    .page-section{
       text-align: center;
       }
+   .profile {
+      display: flex;
+      justify-content: center;
+   }   
+   .profile img {
+      max-width: 75%;
+      }
+        
    .left-column{
       font-size: calc(1rem + 1vw);
  }
