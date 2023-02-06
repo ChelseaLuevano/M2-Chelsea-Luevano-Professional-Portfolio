@@ -220,33 +220,57 @@ header nav a {
 @media screen and (min-width: 320px) and (max-width: 480px) { 
    .page-section{
       text-align: center;
-      }
+      /* display: flex;
+      align-items: center;
+      justify-content: center; */
+      display: inline-block;
+      vertical-align: middle;
+   }
    .profile {
       display: flex;
       justify-content: center;
    }   
    .profile img {
       max-width: 75%;
-      }
-        
+   }
    .left-column{
       font-size: calc(1rem + 1vw);
- }
+      border-bottom: 4px solid var(--main-color);
+      border-right: none;
+      display: inline-block;
+      vertical-align: middle;
+   }
+   .right-column{
+      display: inline-block;
+      vertical-align: middle;
+   }
+   aside > h2 {
+      text-align: center;
+    }
 }
 
 /* Tablet Styling */
 @media screen and (min-width: 480px) and (max-width: 780px) { 
    .page-section{
       text-align: center;
-      }
+   }
+   .left-column{
+      font-size: calc(1rem + 1vw);
+      border-bottom: 4px solid var(--main-color);
+      border-right: none;
+   }    
 }
 
  /* Large Desktop Styling */
 @media screen and (min-width:780px) and (max-width: 1020px) { 
    .page-section{
       text-align: center;
-      }
- }
+   }
+   .left-column{
+      font-size: calc(1rem + 1vw);
+      border-right: 4px solid var(--main-color);
+      border-bottom: none;
+    }
 
  /* There is no footer in Mock-Up so I have commented out this code */
 /* footer {
