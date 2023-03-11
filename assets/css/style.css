@@ -131,6 +131,10 @@ header nav a {
    margin-right: 4%;
  }  
 
+ .right-column ~ .sub-work {
+   display:flex;
+ }  
+
  /* Style paragraph content in about-me section */
  .about-me p {
    color: var(--main-color);
