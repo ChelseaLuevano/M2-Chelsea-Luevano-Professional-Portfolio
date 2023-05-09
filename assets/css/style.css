@@ -172,7 +172,8 @@ header nav a {
  }
 
  .PutASporkInIt {
-   background-image: url("../images/putasporkinit-co-2023-05-09.png")
+   background-image: url("../images/putasporkinit-co-2023-05-09.png");
+   background-position: top center;
  }
 
  /* Styling of Middle Section with Work Content */
